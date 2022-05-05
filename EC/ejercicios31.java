@@ -1,17 +1,21 @@
-mport java.util.Scanner;
 
-public class ejercicio3 {
-
+import java.util.Scanner;
+public class Ejercicio31 {
+    static Scanner lt=new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        //Declarar Variables
         int edad;
-        System.out.print("Ingresa el valor de edad: ");
-        edad = in.nextInt();
-        in.nextLine();
-        if(edad>=18)
-            System.out.println("Si puede votar en las proximas elecciones.");
-        else
-            System.out.println("No puede votar en las proximas elecciones.");
+        String mensaje;
+        //Datos de entrada
+        System.out.println("Ingrese la edad:");
+        edad=lt.nextInt();
+        //Proceso
+        if (edad>=18) {
+            mensaje="Puede votar porque su edad es "+edad;
+        } else {
+            mensaje="No puede votar porque su edad es "+edad;
+        }
+        //Datos de Salida
+        System.out.println(mensaje);        
     }
-
 }
