@@ -12,7 +12,6 @@ if anhoAnti>2 and anhoAnti<5:
   bonoAnti=sueldo*0.20
 elif anhoAnti>=5:
   bonoAnti=sueldo*0.30
-
 if sueldo>3500:
   bonoSueldo=sueldo*0.10
 elif sueldo>=1000 and sueldo<=3500:
