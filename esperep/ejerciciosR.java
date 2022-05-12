@@ -1,5 +1,7 @@
 package esperep;
 
+import java.util.Scanner;
+
 /**
 */
 public class ejerciciosR{
@@ -25,9 +27,35 @@ public static void inprimirForN1_20() {
          System.out.print(numInit);
     }
 }
+
+public static void nombrevertical() {
+    Scanner lt=new Scanner(System.in);
+    System.out.println("ingres su nombre:");
+    String nombre=lt.next();
+    for (int i = 0; i < nombre.length(); i++){
+        System.out.println(nombre.charAt(i));
+    }
+        
+}
+
+public static void nombredereves() {
+    Scanner lt=new Scanner(System.in);
+    System.out.println("ingres su nombre:");
+    String nombre=lt.next();
+    for (int i = nombre.length()-1; i >=0; i++){
+        System.out.println(nombre.charAt(i));
+
+    }
+
+    
+}
     public static void main(String[]args) {
-        System.out.println("imprime while:"); inprimirWileN1_20();
+        /*System.out.println("imprime while:"); inprimirWileN1_20();
         System.out.println("imprime do while:"); inprimirWileN1_20();
-        System.out.println("imprime for"); inprimirForN1_20();
+        System.out.println("imprime for"); inprimirForN1_20();*/
+
+        /*nombrevertical();*/
+
+        nombredereves();
     }
 }
