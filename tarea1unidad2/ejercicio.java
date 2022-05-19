@@ -2,8 +2,8 @@ package tarea1unidad2;
 
 import java.util.Scanner;
 /**
- * ejercicio
- */
+* ejercicio
+*/
 
 public class ejercicio {
     static Scanner leert=new Scanner(System.in);
@@ -15,11 +15,14 @@ public class ejercicio {
                 resultado=resultado*i;
         }
         }
-    return resultado;
-}
-
+        return resultado;
+    }
+    
     public static void main(String[] args) {
-        System.out.println(factorialn(5));
+        System.out.println("ingrese un numero:");
+        int num=leert.nextInt();
+        for (int i = 0; i<=num; i++) {
+            System.out.println("factorial de "+ i+" es:" +factorialn(i));
+        }
     } 
-        
 }
