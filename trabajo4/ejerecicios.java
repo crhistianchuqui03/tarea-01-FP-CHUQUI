@@ -214,10 +214,8 @@ public class ejerecicios {
         }
         System.out.println("El promedio de toda la escuela es: "+(total/alumnos)+" años");
     }
-    public static void ejercicio410prof() {
-        //Ejervarios();
-    }
-    public static void ejercicio411() {
+
+    public static void ejercicio410() {
          //Definir Variables
          int cantidad;
          double tipo, total=0;
